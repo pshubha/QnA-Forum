@@ -92,7 +92,7 @@ const Display = () => {
                                                     {
                                                         Ans.map((a, n) => {
                                                             return (
-                                                                <div key={a.ans_id}>{q.q_id === a.q_id ? <><h7>[{a.user_name}]</h7> <h6>Ans.: {a.ans_text}</h6></> : <span></span>}</div>
+                                                                <div key={a.ans_id}>{q.q_id === a.q_id ? <><h7>User:[{a.user_name}]</h7> <h6>Ans.: {a.ans_text}</h6></> : <span></span>}</div>
                                                             )
                                                         })
                                                     }</div>
@@ -109,7 +109,7 @@ const Display = () => {
                                             <div style={{ padding: '20px' }} key={q.q_id}><li><h5> {q.q_text}</h5></li>{
                                                 Ans.map((a, n) => {
                                                     return (
-                                                        <div key={a.ans_id}>{q.q_id === a.q_id ? <><h7>[{a.user_name}]</h7> <h6>Ans.: {a.ans_text}</h6></> : <span></span>}</div>
+                                                        <div key={a.ans_id}>{q.q_id === a.q_id ? <><h7>User:[{a.user_name}]</h7> <h6>Ans.: {a.ans_text}</h6></> : <span></span>}</div>
                                                     )
                                                 })
                                             }</div>

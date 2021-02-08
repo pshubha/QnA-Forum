@@ -23,7 +23,7 @@ const App = () => {
     <div className="App">
       <div className='container-fluid' style={{ backgroundColor: mode, color: font, height: '500vw' }}>
         <Router>
-          <h1 style={{ fontFamily: ('Papyrus', 'Fantasy'), color:'#D45757',paddingTop: '20px' }}>Question Answering System</h1>
+          <h1 style={{ fontFamily: ('Papyrus', 'Fantasy'), color: '#D45757', paddingTop: '20px' }}>Question Answering System</h1>
           <hr></hr>
           <div style={{ float: 'left', paddingLeft: '20px', paddingTop: '20px' }}>
             <NavLink style={{ paddingLeft: '20px' }} exact activeClassName="active" to="/">Home</NavLink>
