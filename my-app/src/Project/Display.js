@@ -10,8 +10,6 @@ const Display = () => {
     const [Ques, setQue] = useState([])
     const [Ans, setAns] = useState([])
     const [user, setUser] = useState([])
-    // const noAns = new Set()
-    // const [isActive, setActive] = useState(false)
     const [data, setData] = useState([])
     let Active = JSON.parse(sessionStorage.getItem('ActiveUser'))
     const [stat, setStat] = useState(Active.Status)
@@ -89,12 +87,7 @@ const Display = () => {
                                             return (
                                                 <div style={{ padding: '20px' }} key={q.q_id}><li><h5> {q.q_text}</h5></li>
                                                     <form>
-                                                        {/* <button onClick={()=>setBox(true)}>Post Answer</button>
-                                                        {box?<input/>:''} */}
                                                         <Link to={{ pathname: '/postAns', id: q.q_id }} activeClassName="active" className='btn btn-secondary btn-sm' >Post Answer</Link>
-
-                                                        {/* <Route path='/postAns' component={PostAns} /> */}
-
                                                     </form>
                                                     {
                                                         Ans.map((a, n) => {

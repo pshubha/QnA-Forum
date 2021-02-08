@@ -10,7 +10,7 @@ import Logout from './Project/Logout';
 import PostAns from './Project/PostAns';
 
 
-const App=()=> {
+const App = () => {
   const [status, setStatus] = useState(false)
   const [mode, font, isClick] = useDarkMode(status)
   let Active = JSON.parse(sessionStorage.getItem('ActiveUser'))
@@ -23,7 +23,7 @@ const App=()=> {
     <div className="App">
       <div className='container-fluid' style={{ backgroundColor: mode, color: font, height: '500vw' }}>
         <Router>
-          <h1 style={{ paddingTop: '20px' }}>Question Answering System</h1>
+          <h1 style={{ fontFamily: ('Papyrus', 'Fantasy'), color:'#D45757',paddingTop: '20px' }}>Question Answering System</h1>
           <hr></hr>
           <div style={{ float: 'left', paddingLeft: '20px', paddingTop: '20px' }}>
             <NavLink style={{ paddingLeft: '20px' }} exact activeClassName="active" to="/">Home</NavLink>
@@ -43,7 +43,7 @@ const App=()=> {
             <Route path='/signup' component={Signup} />
             <Route path='/logout' component={Logout} />
             <Route path='/postAns' component={PostAns} />
-            
+
 
           </Switch>
         </Router>
